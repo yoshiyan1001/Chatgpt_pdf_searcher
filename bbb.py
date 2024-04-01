@@ -36,6 +36,6 @@ docsearch = faiss.FAISS.from_texts(texts, embeddings)
 chain = load_qa_chain(ChatOpenAI(), chain_type="stuff")
 
 query = "On which datasets does GPT-3 struggle??"
-docs = docsearch.similarity_search(query)
+docs = docsearch.similarity_search(query, top_k=5)
 answer = chain.invoke({"input_documents":docs, "question":query})
 print(answer)

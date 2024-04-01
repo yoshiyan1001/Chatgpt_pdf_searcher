@@ -1,8 +1,3 @@
-'''
-LangChainライブラリを用いて、PDFの文章に対して質問を投げかけられるプログラムを開発してください。
-LangChainを利用したことが無い方は、ドキュメント等を参照しながら開発をしてください。
-Pythonコードと実行結果のスクリーンショットを提出してください。 
-'''
 import os
  
 from langchain_openai import ChatOpenAI
